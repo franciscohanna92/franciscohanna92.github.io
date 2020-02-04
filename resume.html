@@ -1,0 +1,138 @@
+---
+permalink: /
+layout: default
+---
+<section id="about-me" class="section-block">
+  <h3>About me</h3>
+  <section>
+    <p>
+      Software engineer with ~4 years of experience in the IT industry, with main focus on Javascript and it’s related ecosystem. I have also worked with different languages and frameworks including .NET, SQL Server, MySQL, PHP, AngularJS, among others. I have worked successfully on projects and developed web applications for several companies.
+    </p>
+    <p>
+      I consider myself a fast learner, always eager to take on new challenges and willing to keep on learning and improving my skills.    
+    </p>
+  </section>
+</section>
+
+<section id="work-experience" class="section-block">
+  <h3>Work experience</h3>
+
+  {% for job in site.data.work %}
+  <section>
+    <h4>{{ job.position }}</h4>
+    <h5>{{ job.company }}</h5>
+    <p class="text-muted">{{ job.date }}</p>
+    <p>{{ job.description }}</p>
+    <ul>
+      {% for achievement in job.achievements %}
+      <li>{{ achievement }}</li>
+      {% endfor %}
+    </ul>
+    <p class="techs">Tech & tools: {{ job.techs }}</p>
+  </section>
+  {% endfor %}
+</section>
+
+<section id="education" class="section-block">
+  <h3>Education</h3>
+  <section>
+    <h4>Degree in Computer Science</h4>
+    <h5>National University of San Juan, San Juan, Argentina</h5>
+    <p class="text-muted m-0">In progress</p>
+  </section>
+  <section>
+    <h4>Techinal Degree in Programming</h4>
+    <h5>National University of San Juan, San Juan, Argentina</h5>
+    <p class="text-muted m-0">December 2018</p>
+  </section>
+</section>
+
+<section id="research-projects" class="section-block">
+  <h3>Research projects</h3>
+  <section>
+    <ul class="list-unstyled">
+      <li class="mb-2"> <i class="fa fa-caret-right "></i> &nbsp; 
+        <a class="text-dark" target="_blank" rel="noopener" href="http://revista.sabi.org.ar/index.php/revista/article/view/190">
+          Design and development of Serious Games for rehabilitation of post-stroke patients, Argentine Journal of Bioengineering, Vol 23, N° 1.
+        </a>
+      </li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; 
+        <a class="text-dark" target="_blank" rel="noopener" href="https://revistas.unc.edu.ar/index.php/revistaEF/article/view/15619">
+          Physics experiments using ArduinoTM, Physics Teaching Magazine, Vol 28.
+        </a>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section id="technical-skills" class="section-block">
+  <h3>Techincal skills</h3>
+  <section>
+    <ul class="list-unstyled">
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; RESTful API design, specification and development.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Front-end frameworks including Vue and Angular.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Back-end technologies including NodeJS, .NET Framework/Core and PHP</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Database design and implementation, including MySQL and MongoDB.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Infrastructure services management, including AWS (EC2, Elastic Beanstalk, RDS, S3, Lambda, Cloudwatch) and Firebase.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; DevOps tools implementation, such as Docker, Git, Gitlab CI/CD.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="personal-skills" class="section-block">
+  <h3>Personal skills</h3>
+  <section>
+    <ul class="list-unstyled">
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Self-management, sincere communication and teamwork mindset – I worked several times as a remote developer achieving excellent results.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Team management  – in my role at MINEXUS, I led a three developers team to build a web based system.</li>
+      <li class="mb-2"> <i class="fa fa-caret-right text-dark"></i> &nbsp; Resilience and willingness to learn  – when working for Plataforma 10, I adapted myself to a technology which I didn’t have prior professional experience with in less than a month.</li>
+    </ul>
+  </section>
+</section>
+
+<section id="volunteer-experience" class="section-block">
+  <h3>Volunteer experience</h3>
+
+  <section>
+    <h4>Technical team member</h4>
+    <h5>University Volunteer Program: “Towards Technological Inclusion”</h5>
+    <p class="text-muted">nov. 2016 - apr. 2017</p>
+    <ul class="m-0">
+      <li>
+        I was in charge of organizing a seminar on accessibility technologies in computing and mobile devices
+      </li>
+      <li>
+        Gave a workshop on accessibility tools on Android devices for people with reduced visual ability
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h4>Spanish translation team member</h4>
+    <h5>VisuAlgo</h5>
+    <p class="text-muted">feb. 2017 - mar. 2017</p>
+    <ul class="m-0">
+      <li>
+        I was in charge of organizing a seminar on accessibility technologies in computing and mobile devices
+      </li>
+      <li>
+        Gave a workshop on accessibility tools on Android devices for people with reduced visual ability
+      </li>
+    </ul class="m-0">
+  </section>
+</section>
+
+<section id="interests" class="section-block">
+  <h3>Interests</h3>
+  <section>
+    <p>
+      I am a relaxed person who likes to read, watch movies and listen to music on my spare time. I also play the guitar and record my songs once in a while. I like cycling and running and enjoy watching football.
+    </p>
+    <p>
+      I am also interested in artificial intelligence including not only it’s technical implications, but also the more philosophical ones.
+    </p>
+    <p>
+      I enjoy a good coffee and a nice conversation :)
+    </p>
+  </section>
+</section>

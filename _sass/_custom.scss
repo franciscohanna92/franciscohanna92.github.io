@@ -1,0 +1,82 @@
+$primary: #009ACD;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: inset 0 15px 0 $primary;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Hind', sans-serif;
+}
+
+a {
+  color: $dark;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  @extend .px-4;
+}
+
+.list-group-item {
+  &.active {
+    color: unset;
+    box-shadow: inset 0.2rem 0px 0 $primary;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+}
+
+// Resume
+.section-block {
+  background-color: $white;
+  color: $dark;
+  @extend .border;
+  @extend .shadow-sm;
+  @extend .p-4;
+  @extend .mb-4;
+  
+  h3 {
+    @extend .font-weight-bold;
+    @extend .mb-4;
+  }
+
+  section:first-of-type {
+    @extend .pt-0;
+  }
+
+  section:last-child {
+    @extend .pb-0;
+  }
+
+  section {
+    @extend .py-4;
+    h4 {
+      @extend .h5;
+      @extend .mb-1;
+      @extend .font-weight-bold;
+    }
+
+    h5 {
+      @extend .h6;
+    }
+
+    .techs {
+      @extend .font-italic; 
+      @extend .text-muted; 
+      @extend .m-0;
+    }
+  }
+
+  section:not(:last-child) {
+    @extend .border-bottom;
+  }
+}

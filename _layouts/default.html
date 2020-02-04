@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Francisco Hanna</title>
+    <link rel="shortcut icon"
+        href="https://vignette.wikia.nocookie.net/wreckitralph/images/8/83/Inky8bit.png/revision/latest?cb=20130625170116"
+        type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96166698-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-96166698-2');
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="bg-light">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4">
+                {% include sidebar.html %}
+            </div>
+            <div class="col-12 col-md-7 col-lg-8 mt-5">
+                {{content}}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

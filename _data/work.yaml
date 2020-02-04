@@ -1,0 +1,48 @@
+- position: Lead Software Developer
+  company: TravelPAQ
+  date: jul 2019 - dec. 2020
+  description: Led the newly formed TravelPAQ outsourcing team and was part of one of Plataforma 10’s core back-end teams.
+  achievements: 
+    - Onboarded and trained new outsourcing team members on Plataforma 10’s tech stack
+    - As part of Platforma 10’s Buses team, worked on two new service provider integrations, and generated stress test suites.
+    - Prepared profiling reports of an API built with GraphQL
+    - Carried out maintenance and improvement of core business APIs.
+  techs: Node.js, .NET Framework, .NET Core, ELK Stack, JavaScript, Sentry, GraphQL and SQL Server.
+
+- position: Lead Software Developer
+  company: MINEXUS
+  date: oct. 2018 - jun. 2019
+  description: Developed a major web-based contractor documentation control system, which consisted of three client web apps, a Single Sign-On service built from scratch and a RESTful API.
+  achievements: 
+    - Led a three-person team to build the first version of the system for an early adopter of the MINEXUS's audit services.
+    - Designed the general architecture of the system and the main database schema.
+    - Developed the client applications, which were a web front-end in Vue served by an Express application.
+    - Developed the Single Sign On service following the Password Grant flow from OAuth 2.0
+    - Generated the requirements of the RESTful API.
+  techs: Vue.js, Node.js, Express, Javascript, CakePHP, MySQL, Docker and AWS (Cloudwatch, RDS, Elastic Beanstalk).
+
+- position: Full-stack web developer
+  company: TravelPAQ
+  date: jul. 2017 - nov.2018
+  description: Worked in the main development team at TravelPAQ.
+  achievements: 
+    - Maintained and improved back-office applications for tour package operators and online travel agencies.
+    - Developed a website whitelabel system for travel agencies to offer and sell tour packages online.
+    - Helped in the migration of the main ETL business process from a monolithic to a microservice-based architecture, exploring serverless solutions.
+  techs: CakePHP, Javascript, AngularJS, Node.js, Express, Java and AWS (Lambda, Cloudwatch, RDS, Elastic Beanstalk).
+
+- position: Full-stack web developer (freelance)
+  company: HEAL S. A.
+  date: mar. 2017 - jun. 2017
+  description: Developed an inventory control system.
+  achievements: 
+    - Designed, documented and implemented the entire system, using a real-time web app development framework.
+  techs: Javascript, MeteorJS and MongoDB.
+
+- position: Web Developer Intern
+  company: Excelencia S. I.
+  date: oct. 2015- apr.2016
+  description: Maintained and improved web applications.
+  achievements: 
+    - Implemented functionalities and provided maintenance of web applications for administration of health care institutions.
+  techs: .NET Framework, Javascript and AngularJS
