@@ -1,7 +1,27 @@
 ---
 layout: post
 title: Earthquakes notifcations mobile app
+description: I developed a mobile app that sends push notifications every time an earthquake is detected. The app shows info about the earthquake, and also the user's relative position to it.
 permalink: /projects/earthquakes-app
 tags: react-native firebase aws python serverless web crawling
 excerpt_separator: <!--more-->
 ---
+<p>
+  INPRES is an argentine institution that is responsible for monitoring seismic activity in the country. This institute has a <a href="http://" target="_blank" rel="noopener noreferrer">website</a> in which the latest earthquakes that have been detected are published and that is visited by hundreds of people every time an earthquake is detected, but they can only do so once they have felt the earthquake. Therefore, I found it interesting to develop a mobile application that notifies users every time a new earthquake occurs.
+</p>
+
+<p>
+  The first task was to develop a web crawler that could take the data of the detected earthquakes and save them in a database. For this, I developed an app in Python, deployed in an AWS Lambda function that extracts the earthquakes from the table and saves them in a Firebase Realtime Database instance. The Lambda function is triggered periodically every one minute.
+</p>
+
+<p>
+  Then, to show this information to the user, I developed a React Native app that consumes the Firebase data. The application can be seen in the Play Store. The application not only informs through notifications, but also allows you to see a map with the location of the earthquakes and that of the user.
+</p>
+
+<p>
+  As I had a bit of time left, I decided to develop a bot that would publish on a Twitter page every time there is a new earthquake detected. The bot runs on a Google Cloud Function (same as the notification delivery system). Each tweet has a link that leads to a mini web version of the app that allows you to see the earthquake located on the map.
+</p>
+
+<p>
+  As of today, the application has an average of 1000 users per month and Twitter approximately 1600 followers, so it seems that someone did it;)
+</p>

@@ -9,4 +9,9 @@ layout: default
   <section>
     {{ content }}
   </section>
+  <div class="mb-3">
+    {% for tag in page.tags %}
+      <div class="tech-badge">{{ tag }}</div>
+    {% endfor %}
+  </div>
 </section>

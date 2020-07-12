@@ -1,7 +1,19 @@
 ---
 layout: post
 title: Jornalia, a news aggregator API
+description: Jornalia is a news aggregator API that provides news from many argentinian websites trough a RESTful JSON interface.
 permalink: /projects/jornalia
 tags: nodejs express mongodb web crawling python aws
 excerpt_separator: <!--more-->
 ---
+
+<p>
+  After working on <a href="https://cvd19.news" target="_blank" rel="noopener noreferrer">cvd19.news</a>, where the data source came from <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">NewsAPI</a>, I decided to do some research on other news APIs available on the market.<!--more--> Seeing that the Google News API had been deprecated, and that there were not many alternatives to get data from many Argentine media, together with a friend we decided to create a news aggregator that exposes a RESTful interface.
+</p>
+<p>
+  Combining web crawling techniques and RSS feed consumption, we developed Jornalia, a JSON API for Argentine media news. Jornalia allows searching among a large number of media, being able to filter the articles found by categories and publication dates.
+  The stack is made up of an API in Express, a web crawler in Python with Scrapy and MongoDB to store all the data.
+</p>
+<p>
+  Jornalia is still in active development phase, and we have already released the Beta version which can be found at <a href="https://jornalia.net" target="_blank" rel="noopener noreferrer">https://jornalia.net</a>. There are many plans to continue development, among which is to create a news portal that allows you to create personalized feeds and start integrating media from other countries.
+</p>

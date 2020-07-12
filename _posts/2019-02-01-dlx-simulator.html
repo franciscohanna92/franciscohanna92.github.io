@@ -1,7 +1,23 @@
 ---
 layout: post
 title: DLX assembler online interpreter
+description: A web interface to compile and simulate programs written in assembly language for the DLX architecture
 permalink: /projects/dlx-interpeter
 tags: c assembler python flask vue
 excerpt_separator: <!--more-->
 ---
+<p>
+  DLX is a MIPS-based microprocessor architecture that is widely used didactically to teach how a RISC pipeline architecture works. DLX has a set of instructions that allow you to manipulate 32 memory registers. <!--more--> This set of instructions is the assembly language of the architecture.
+</p>
+
+<p>
+  While I was studying Advanced Computer Architectures at university, we studied the DLX, but a great obstacle in learning was studying a programming language and not having a quick way to verify that the results of my program were correct. So, searching the web I found a DLX compiler and emulator called EBEL-DLX (the original source disappeared, but I was able to rescue it in <a href="https://github.com/franciscohanna92/ebel-dlx" target="_blank" rel="noopener noreferrer">this repository</a>), which worked very well.
+</p>
+
+<p>
+  I decided to create a web version of EBEL-DLX. For this, what I did was modify its source code to print strings in JSON format through stdout. Next, I created an API in Python (using Flask) that would use the binary to run compilations and simulations of programs sent through an HTTP request. Finally, I implemented a web app in Vue to consume this API and allow users to interact with EBEL-DLX through the API.
+</p>
+
+<p>
+  The resulting app is not yet online, but you can find the API source <a href="https://github.com/franciscohanna92/dlx-web-api" target="_blank" rel="noopener noreferrer">here</a>. At the moment, the app does not simulate the DLX pipeline, and serves only as a checker for your DLX programs.
+</p>
