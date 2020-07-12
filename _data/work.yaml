@@ -1,3 +1,17 @@
+- position: Sr. Software Engineer
+  company: SparkDigital
+  date: jan. 2020 - present
+  description: Working as a software engineer in different projects from streaming services to e-learning platforms US based companies.
+  achievements: 
+    - Refactored and developed new features for a tech demo app for a major communciations and streaming services company.
+    - Currently working on new feature for a e-learning platform for a major publisher.
+  techs: 
+    - Node.js
+    - React
+    - MongoDB
+    - Express
+    - Sass
+
 - position: Lead Software Developer
   company: TravelPAQ
   date: jul 2019 - dec. 2020
