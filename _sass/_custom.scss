@@ -1,18 +1,17 @@
 $primary: #009ACD;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik&display=swap');
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
   box-shadow: inset 0 15px 0 $primary;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
-a {
+:not(p) > a {
   color: $dark;
 
   &:hover {
@@ -28,10 +27,8 @@ a {
 }
 
 .list-group-item {
-  &.active {
-    color: unset;
-    box-shadow: inset 0.2rem 0px 0 $primary;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+  &.active > a {
+    @extend .text-primary;
   }
 }
 
@@ -39,14 +36,13 @@ a {
 .section-block {
   background-color: $white;
   color: $dark;
-  @extend .border;
-  @extend .shadow-sm;
   @extend .p-4;
-  @extend .mb-4;
-  
+
   h3 {
     @extend .font-weight-bold;
     @extend .mb-4;
+    @extend .pb-3;
+    @extend .border-bottom;
   }
 
   section:first-of-type {
@@ -70,13 +66,46 @@ a {
     }
 
     .techs {
-      @extend .font-italic; 
       @extend .text-muted; 
       @extend .m-0;
+
+      .badge {
+        font-weight: 400;
+      }
     }
   }
+}
 
-  section:not(:last-child) {
-    @extend .border-bottom;
+.post-header {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  .overlay {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
   }
+
+  img {
+    margin: 0 auto;
+    max-height: 480px;
+    z-index: 100;
+  }
+}
+
+.tech-badge {
+  @extend .badge;
+  @extend .badge-pill;
+  color: #6c757d;
+  background-color: #ffffff;
+  border: 1px solid #6c757d !important;
+}
+
+ul {
+  @extend .pl-4;
 }

@@ -7,7 +7,14 @@
     - As part of Platforma 10’s Buses team, worked on two new service provider integrations, and generated stress test suites.
     - Prepared profiling reports of an API built with GraphQL
     - Carried out maintenance and improvement of core business APIs.
-  techs: Node.js, .NET Framework, .NET Core, ELK Stack, JavaScript, Sentry, GraphQL and SQL Server.
+  techs: 
+    - Node.js
+    - .NET
+    - ELK Stack
+    - JavaScript
+    - Sentry
+    - GraphQL
+    - SQL Server
 
 - position: Lead Software Developer
   company: MINEXUS
@@ -19,7 +26,15 @@
     - Developed the client applications, which were a web front-end in Vue served by an Express application.
     - Developed the Single Sign On service following the Password Grant flow from OAuth 2.0
     - Generated the requirements of the RESTful API.
-  techs: Vue.js, Node.js, Express, Javascript, CakePHP, MySQL, Docker and AWS (Cloudwatch, RDS, Elastic Beanstalk).
+  techs: 
+    - Vue.js
+    - Node.js
+    - Express
+    - Javascript
+    - CakePHP
+    - MySQL
+    - Docke
+    - AWS
 
 - position: Full-stack web developer
   company: TravelPAQ
@@ -29,7 +44,14 @@
     - Maintained and improved back-office applications for tour package operators and online travel agencies.
     - Developed a website whitelabel system for travel agencies to offer and sell tour packages online.
     - Helped in the migration of the main ETL business process from a monolithic to a microservice-based architecture, exploring serverless solutions.
-  techs: CakePHP, Javascript, AngularJS, Node.js, Express, Java and AWS (Lambda, Cloudwatch, RDS, Elastic Beanstalk).
+  techs: 
+    - CakePHP
+    - Javascript
+    - AngularJS
+    - Node.js
+    - Express
+    - Java
+    - AWS
 
 - position: Full-stack web developer (freelance)
   company: HEAL S. A.
@@ -37,7 +59,10 @@
   description: Developed an inventory control system.
   achievements: 
     - Designed, documented and implemented the entire system, using a real-time web app development framework.
-  techs: Javascript, MeteorJS and MongoDB.
+  techs: 
+    - Javascript
+    - MeteorJS 
+    - MongoDB
 
 - position: Web Developer Intern
   company: Excelencia S. I.
@@ -45,4 +70,7 @@
   description: Maintained and improved web applications.
   achievements: 
     - Implemented functionalities and provided maintenance of web applications for administration of health care institutions.
-  techs: .NET Framework, Javascript and AngularJS
+  techs: 
+    - .NET Framework
+    - Javascript 
+    - AngularJS

@@ -1,20 +1,25 @@
 <aside class="sticky-top pt-5">
-    <div class="d-flex justify-content-center mb-4">
-        <img style="max-width:180px; filter: grayscale()" class="w-50 h-100 rounded-circle shadow-sm"
-            src="https://avatars1.githubusercontent.com/u/12707758?s=460&v=4" alt="Foto de perfil">
-    </div>
-    <div class="text-center">
+    <a href="/">
+      <div class="d-flex justify-content-center mb-4">
+        <img style="max-width:180px" class="w-50 h-100 rounded-circle shadow-sm"
+          src="https://avatars1.githubusercontent.com/u/12707758?s=460&v=4" alt="Foto de perfil">
+      </div>
+      <div class="text-center">
         <h1 class="h3 font-weight-bold m-0">Francisco Hanna</h1>
         <p class="text-muted">Software Engineer</p>
-    </div>
-    <ul class="list-group bg-light shadow-sm my-5">
-        <li class="list-group-item bg-light text-center {% if page.url == '/' %} active {% endif %}  rounded-0">
-            <a class="d-block" href="/">Resume</a>
-        </li>
-        <li class="list-group-item bg-light text-center {% if page.url == '/contact.html' %} active {% endif %} rounded-0">
-            <a href="/contact">Get in touch</a>
-        </li>
-        <!-- <li class="list-group-item bg-light text-center rounded-0">Projects</li> -->
-      </ul>
+      </div>
+    </a>
+    <ul class="pl-0 bg-white border-0 d-flex flex-column justify-content-center list-group my-4">
+      <li class="list-group-item bg-white border-0 text-center {% if page.url == '/resume' %} active {% endif %}  rounded-0">
+        <a class="d-block" href="/resume">Resume</a>
+      </li>
+      <li class="list-group-item bg-white border-0 text-center {% if page.url == '/projects' %} active {% endif %}  rounded-0">
+        <a class="d-block" href="/projects">Projects</a>
+      </li>
+      <li class="list-group-item bg-white border-0 text-center {% if page.url == '/contact.html' %} active {% endif %} rounded-0">
+        <a href="/contact">Contact</a>
+      </li>
+      <!-- <li class="list-group-item bg-light text-center rounded-0">Projects</li> -->
+    </ul>
     {% include contact-links.html %}
 </aside>
